@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import useFetch from "./useFetch";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const BlogDetail = () => {
     const { id } = useParams();
@@ -29,8 +30,11 @@ const BlogDetail = () => {
                     <div>
                         {blog.content}
                     </div>
+                <div className="buttons">
                     {!isDeleting && <button onClick={handleDelete}>Delete</button>}
                     {isDeleting && <button>Deleting ...</button>}
+                    <Link to={`/blogs/${blog.id}/edit`}><button>Edit</button></Link> 
+                </div>
                 </article>
             )}
         </div>

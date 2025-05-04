@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const BlogCreate = () => {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
-    const [author, setAuthor] = useState('mario');
+    const [author, setAuthor] = useState('Adam');
     const [isLoading, setIsLoading] = useState(false);
     const navigate = useNavigate();
 

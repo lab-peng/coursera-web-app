@@ -71,6 +71,7 @@
 }
 
 .blog-detail button {
+  width: 80px;
   background-color: #f1356d;
   color: #fff;
   border: 0;
@@ -78,6 +79,12 @@
   border-radius: 8px;
   cursor: pointer;
   transition: opacity 0.15s;
+}
+
+.blog-detail .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 /* blog create page */
